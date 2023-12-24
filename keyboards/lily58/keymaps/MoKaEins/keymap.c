@@ -1,13 +1,5 @@
 #include QMK_KEYBOARD_H
 
-// enum layer_number {
-//   _BASE = 0,
-//   _NUM,
-//   _ARROW,
-//   _GAMING,
-//   _UMLAUT
-// };
-
 #define _DH 0
 #define _NUM 1
 #define _ARROW 2
@@ -55,8 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_ARROW] = LAYOUT(
-      LCG_SWP, LCG_NRM, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, DF(0),
-      KC_TRNS, RALT(KC_Q), KC_TRNS, KC_UP, KC_TRNS, KC_TRNS,                KC_TRNS, RALT(KC_L), KC_UP, KC_TRNS, KC_TRNS, DF(5),
+      LCG_SWP, LCG_NRM, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TO(0),
+      KC_TRNS, RALT(KC_Q), KC_TRNS, KC_UP, KC_TRNS, KC_TRNS,                KC_TRNS, RALT(KC_L), KC_UP, KC_TRNS, KC_TRNS, TO(5),
       KC_TRNS, KC_QUOT, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,                   KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, TO(4),
       KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,           KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_TRNS,
                           TO(0), KC_RALT, KC_RCTL, KC_TRNS,              KC_NO, KC_DEL, KC_NO, TO(0)
