@@ -5,7 +5,7 @@
 #define _ARROW 2
 #define _UMLAUT 3
 #define _GAMING 4
-#define _COLEMAK 5
+// #define _COLEMAK 5
 
 
 // Tap Dance declarations
@@ -64,17 +64,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_GAMING] = LAYOUT(
       KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5,                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-      KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,                    KC_Z, KC_U, KC_I, KC_O, KC_P, KC_BSLS,
-      KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G,                    KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_TRNS,
+      KC_T, KC_TAB, KC_Q, KC_W, KC_E, KC_R,                     KC_Z, KC_U, KC_I, KC_O, KC_P, KC_BSLS,
+      KC_G, KC_LSFT, KC_A, KC_S, KC_D, KC_F,                     KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_TRNS,
       KC_LCTL, KC_Y, KC_X, KC_C, KC_V, KC_B, KC_NO,      KC_N, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TO(0),
       KC_RCTL, KC_LGUI, KC_LALT, KC_SPC,                  KC_TRNS, KC_DEL, KC_NO, KC_NO
 ),
 
-[_COLEMAK] =  LAYOUT(
-      KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5,                               KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS,
-      KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_G,                               KC_J, KC_L, KC_U, KC_Y, KC_RBRC, KC_BSLS,
-      KC_LSFT, KC_A, KC_R, KC_S, KC_T, KC_D,                              KC_H, KC_N, KC_E, KC_I, KC_O, TD(TD_RSFT_ENT),
-      KC_LGUI, KC_Z, KC_X, KC_C, KC_V, KC_B, MO(1),          MO(1), KC_K, KC_M, KC_COMM, KC_DOT, KC_SLSH, MO(2),
-      TO(2), KC_LALT, KC_LCTL, LT(3, KC_SPC),                  KC_SPC, KC_BSPC, KC_LEFT, KC_RGHT
-)
 };
